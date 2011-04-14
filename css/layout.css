@@ -1,0 +1,42 @@
+/* =Layout (fourni par raphael)
+* usage; ajouter une class à container comme ceci :
+* 2 colonnes sidebar à droite : <div id="container" class="two-column-right">
+* 2 colonnes sidebar à gauche : <div id="container" class="two-column-left">
+*
+-------------------------------------------------------------- */
+/*
+LAYOUT: General
+DESCRIPTION: This layout support one column and two columns left or right
+simply adding a container class
+*/
+#container { float: left; width: 100%; }
+#content { margin: 0; width: 700px; }
+#primary,
+#secondary { width: 220px; }
+#secondary { clear: right; }
+#footer { clear: both; width: 100%; }
+
+/*
+LAYOUT: Two colomn
+DESCRIPTION: Two-column fixed layout with one sidebar right or left of content
+*/
+/* Two Column whith right Sidebar */
+.two-column-right #content { float: left; }
+.two-column-right #primary,
+.two-column-right #secondary { float: right; overflow: hidden; }
+/* Two Column whith left Sidebar */
+.two-column-left #content { float: right; }
+.two-column-left #primary,
+.two-column-left #secondary { float: left; overflow: hidden; }
+
+/*
+LAYOUT: One column, no sidebar
+DESCRIPTION: One centered column with no sidebar
+*/
+.one-column #content { margin: 0 auto; width: 800px; }
+
+/*
+LAYOUT: Full width, no sidebar
+DESCRIPTION: Full width content with no sidebar; used for attachment pages
+*/
+.single-attachment #content { margin: 0 auto; width: 100%; }

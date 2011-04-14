@@ -13,7 +13,7 @@
  */
 
 get_header(); ?>
-
+<?php get_sidebar(); ?>
 		<div id="container">
 			<div id="content" role="main">
 
@@ -28,5 +28,5 @@ get_header(); ?>
 			</div><!-- #content -->
 		</div><!-- #container -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
